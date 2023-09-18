@@ -4,7 +4,7 @@ const pipe = document.querySelector('.pipe')
 
 const pulo = () => {
     mario.classList.add('pulinho')
-    // Depois que coloca a class pulinho tem q tirar ela pra poder funfar de novo
+    // Depois que coloca a class pulinho tem q tirar ela pra poder funcionar de novo
                 // Função anonima
     setTimeout(()=>{
         mario.classList.remove('pulinho')
@@ -23,7 +23,7 @@ const loop = setInterval(()=>{
     // console.log(pipePosicao);
     console.log(marioPosicao);
 
-    // ENTROU NO IF É PQ SE FUD$
+    // ENTROU NO IF 
         // Se a posição do pipe chegou ali e a aposição do pipe é maior que zero e a altura do mario for menor que 80
         if(pipePosicao <= 120 && pipePosicao > 0 && marioPosicao < 80){
             pipe.style.animation = 'none';
@@ -37,7 +37,7 @@ const loop = setInterval(()=>{
             mario.style.width = '75px';
             mario.style.marginLeft = '50px'
 
-            // depois de fazer tudo ele limpa/ para o lupe
+            // depois de fazer tudo ele limpa/ para o loop
             clearInterval(loop);
         }
 },10);
